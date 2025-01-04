@@ -24,7 +24,7 @@ st.write("This app will encrypt you words, sentences and even paragraphs using t
 text = st.text_input("Enter the text to be encrypted:")
 
 # Input for shift value
-shift = st.number_input("Enter the shift value (-25-25):", min_value=1, max_value=25, value=5)
+shift = st.number_input("Enter the shift value (-25-25):", min_value=-25, max_value=25, value=5)
 
 # Button to encrypt
 if st.button("Secret Message Maker"):
