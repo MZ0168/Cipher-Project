@@ -35,6 +35,12 @@ if st.button("Secret Message Maker"):
     else:
         st.warning("Please enter a text to encrypt.")
 
+# Input for plain text
+text = st.text_input("Enter the text to be decrypted:")
+
+# Input for shift value
+shift = st.number_input("Enter the shift value (-25--1):", min_value=-25, max_value=-1, value=-5)
+
 # Button to encrypt
 if st.button("Secret Message Decrypter"):
     if text:
@@ -42,4 +48,4 @@ if st.button("Secret Message Decrypter"):
         st.write('**Plain text:**', text)
         st.write('**Encrypted text:**', encrypted_text)
     else:
-        st.warning("Please enter a text to encrypt.")
+        st.warning("Please enter a text to decrypt.")
