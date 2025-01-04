@@ -18,8 +18,7 @@ def caesar(message, offset):
 
 # Streamlit app layout
 st.title("Muhammed's Cipher App")
-st.write("This app will encrypt you words, sentences and even paragraphs using the ceaser cipher program. 
-You can also decrypt a word if you know its value that it was encrypted with by putting it in negative.")
+st.write("This app will encrypt you words, sentences and even paragraphs using the ceaser cipher program. You can also decrypt a word if you know its value that it was encrypted with by putting it in negative.")
 
 # Input for plain text
 text = st.text_input("Enter the text to be encrypted:")
