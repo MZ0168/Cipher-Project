@@ -17,17 +17,18 @@ def caesar(message, offset):
     return encrypted_text
 
 # Streamlit app layout
-st.title("Secret Code Generator")
-st.write("Encrypt your text using the Caesar cipher.")
+st.title("Muhammed's Cipher App")
+st.write("This app will encrypt you words, sentences and even paragraphs using the ceaser cipher program. 
+You can also decrypt a word if you know its value that it was encrypted with by putting it in negative.")
 
 # Input for plain text
 text = st.text_input("Enter the text to be encrypted:")
 
 # Input for shift value
-shift = st.number_input("Enter the shift value (-25-25):", min_value=-25, max_value=25, value=4)
+shift = st.number_input("Enter the shift value (-25-25):", min_value=-25, max_value=25, value=5)
 
 # Button to encrypt
-if st.button("Encrypt"):
+if st.button("Secret Message Maker"):
     if text:
         encrypted_text = caesar(text, shift)
         st.write('**Plain text:**', text)
